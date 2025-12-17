@@ -1,0 +1,93 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color-main: #0B2177 !important;
+  --primary-color-surface: #DEE1ED !important;
+  --primary-color-border: #AEB5D2 !important;
+  --primary-color-hover: #07164F !important;
+  --primary-color-pressed: #06113C !important;
+
+  --neutral-color-100: #0A0A0A !important;
+  --neutral-color-90: #404040 !important;
+  --neutral-color-80: #616161 !important;
+  --neutral-color-70: #757575 !important;
+  --neutral-color-60: #9E9E9E !important;
+  --neutral-color-50: #C2C2C2 !important;
+  --neutral-color-40: #E0E0E0 !important;
+  --neutral-color-30: #EDEDED !important;
+  --neutral-color-20: #F5F5F5 !important;
+
+  --success-color-main: #1CAE70 !important;
+  --success-color-main-50: rgba(212, 226, 214, 0.5) !important;
+  --success-color-surface: #D2EFE2 !important;
+  --success-color-border: #B3E4CF !important;
+  --success-color-hover: #17915D !important;
+  --success-color-pressed: #0E5738 !important;
+
+  --danger-color-main: #EE1B30 !important;
+  --danger-color-surface: #FCD1D6 !important;
+  --danger-color-border: #F9B3BA !important;
+  --danger-color-hover: #C61628 !important;
+  --danger-color-pressed: #770E18 !important;
+
+  --info-color-main: #0A58FF !important;
+  --info-color-surface: #D6E3FF !important;
+  --info-color-border: #ADC7FF !important;
+  --info-color-hover: #0849D4 !important;
+  --info-color-pressed: #052C80 !important;
+
+  --warning-color-main: #F09A28 !important;
+  --warning-color-surface: #FCEBD4 !important;
+  --warning-color-surface-50: rgba(252, 235, 212, 0.5) !important;
+  --warning-color-border: #FADDB7 !important;
+  --warning-color-hover: #C88021 !important;
+  --warning-color-pressed: #784D14 !important;
+
+  --warning-color-gradient: linear-gradient(45deg, #F09A28 0%, #FADDB7 100%) !important;
+  --warning-color-gradient-hover: linear-gradient(225deg, #C88021 0%, #784D14 100%) !important;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+*/

@@ -1,0 +1,519 @@
+@import url('theme-1.css');
+
+/********************/
+/*TOAST*/
+/********************/
+.dx-toast-message {
+    white-space: pre-line;
+    @apply !w-fit;
+}
+
+/********************/
+/*DATAGRID*/
+/********************/
+
+.dx-datagrid {
+    @apply text-neutral-color-90 !important;
+}
+
+.dx-datagrid-headers {
+    @apply mt-2;
+}
+
+.dx-datagrid-headers,
+.dx-datagrid-scroll-container {
+    border-radius: 8px 8px 0 0;
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row.dx-header-row > td {
+    @apply bg-primary-color-surface font-normal !px-3 !py-2 text-neutral-color-90 text-[13px];
+    text-align: center !important;
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row.dx-datagrid-filter-row > td {
+    @apply bg-white font-normal !py-1 !px-3 text-neutral-color-90 !align-middle;
+}
+
+.dx-datagrid-headers .dx-datagrid-content .dx-datagrid-table .dx-row .dx-focused .dx-editor-with-menu {
+    @apply rounded;
+    box-shadow: 0px 0px 0px 2.5px rgba(11, 33, 119, 0.2) !important;
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-texteditor-container {
+    @apply bg-white rounded;
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-texteditor.dx-state-focused {
+    @apply !shadow-none;
+}
+
+.dx-datagrid-header-panel .dx-toolbar {
+    @apply !mb-0;
+}
+
+.dx-toolbar .dx-toolbar-items-container {
+    @apply !h-9;
+}
+
+.dx-toolbar .dx-toolbar-item-content {
+    @apply flex;
+}
+
+/* EXPORT ICON BUTTON */
+.dx-datagrid-export-button .dx-dropdownbutton-action.dx-button .dx-button-content {
+    @apply h-[30px];
+}
+
+.dx-datagrid-headers .dx-row.dx-datagrid-filter-row > td.dx-command-edit.dx-command-edit-with-icons {
+    @apply !p-0 h-[40px];
+}
+
+.dx-datagrid-header-panel .create-btn.dx-button-mode-contained,
+.dx-datagrid-header-panel .create-btn.dx-button-mode-contained.dx-state-hover {
+    @apply bg-primary-color-main rounded border border-primary-color-border text-white;
+}
+
+.dx-datagrid-header-panel .create-btn.dx-button-mode-contained:hover {
+    @apply bg-primary-color-hover;
+}
+
+.dx-datagrid-header-panel .create-btn.dx-button-mode-contained:focus {
+    @apply text-white bg-primary-color-pressed;
+    box-shadow: 0px 0px 0px 3px rgba(11, 33, 119, 0.2);
+}
+
+.dx-datagrid-header-panel .create-btn.dx-button-mode-contained span.dx-button-text::before {
+    content: url('../../icon/general/icon-plus-sm.svg');
+    padding: 3px 6px 0 0;
+}
+
+.dx-datagrid-header-panel .create-btn.dx-button-mode-contained span.dx-button-text {
+    @apply inline-flex items-center;
+}
+
+.dx-datagrid-filter-row .dx-editor-cell .dx-editor-with-menu .dx-texteditor-input {
+    @apply !min-h-fit !pl-7 !pr-0 !text-left;
+}
+
+.dx-datagrid-filter-row .dx-editor-cell .dx-texteditor-input {
+    @apply !text-xs;
+}
+
+.dx-datagrid-filter-row .dx-editor-cell .dx-editor-with-menu .dx-placeholder::before {
+    @apply !pl-5;
+}
+
+.dx-datagrid-filter-row .dx-menu {
+    @apply top-[2px];
+}
+
+.dx-button-mode-contained.clear-filter-btn {
+    @apply !border-none;
+}
+
+.dx-button-mode-contained.clear-filter-btn .dx-button-content {
+    @apply rounded text-primary-color-main;
+}
+
+.dx-button-mode-contained.clear-filter-btn:hover {
+    @apply bg-primary-color-surface border border-primary-color-surface !important;
+}
+
+.dx-button-mode-contained.clear-filter-btn .dx-button-content .dx-icon.dx-icon-right {
+    @apply !pl-0 !ml-1;
+}
+
+.dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content {
+    @apply !p-1;
+}
+
+.dx-filter-menu .dx-menu-item-content .dx-icon.dx-icon-filter-operation-default {
+    @apply !mt-1;
+}
+
+/* ACTION BUTTONS */
+/* .dx-datagrid-rowsview .dx-datagrid-content .dx-datagrid-table .dx-row .dx-command-edit.dx-command-edit-with-icons {
+    @apply inline-flex items-center justify-center !h-fit;
+} */
+
+.dx-datagrid-content .dx-datagrid-table .dx-row .dx-command-edit.dx-command-edit-with-icons .dx-link[title='Edit'] {
+    @apply primary-icon-button !important;
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row .dx-command-edit.dx-command-edit-with-icons .dx-link[title='Delete'] {
+    @apply danger-icon-button !important;
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row .dx-command-edit.dx-command-edit-with-icons .dx-link[title='View Detail'] {
+    @apply warning-icon-button !important;
+}
+
+/* CONTENT ROW */
+.dx-datagrid .dx-datagrid-rowsview .dx-row > td {
+    @apply !px-3 py-0.5 min-[1300px]:py-1 h-[32px] !align-middle;
+}
+
+/* PAGINATION */
+.dx-datagrid-pager {
+    border-top: none !important;
+}
+
+.dx-pager .dx-pages .dx-page,
+.dx-pager .dx-page-sizes .dx-page-size {
+    @apply text-primary-color-main py-1.5 px-2.5 !important;
+}
+
+.dx-pager .dx-pages .dx-selection,
+.dx-pager .dx-pages .dx-page:hover {
+    @apply bg-primary-color-main text-white rounded !important;
+}
+
+.dx-pager .dx-page-sizes .dx-selection,
+.dx-pager .dx-page-sizes .dx-page-size:hover {
+    @apply bg-primary-color-surface text-primary-color-main rounded !important;
+}
+
+.dx-datagrid-borders > .dx-datagrid-pager {
+    margin-top: 6px !important;
+}
+
+.dx-datagrid-borders > .dx-datagrid-filter-panel {
+    border-radius: 0 0 8px 8px;
+}
+
+.dx-icon-column-chooser {
+    padding: 3px !important;
+}
+
+.dx-datagrid-search-panel .dx-texteditor-input {
+    @apply !pl-7 !py-1.5 !pr-3;
+}
+
+.dx-datagrid-search-panel .dx-texteditor-input-container .dx-placeholder {
+    padding-left: 28px;
+}
+
+.dx-datagrid-focus-overlay {
+    @apply !border-none;
+}
+
+.dx-widget[aria-label='Page Navigation'] .dx-dropdowneditor-input-wrapper.dx-selectbox-container {
+    @apply border border-primary-color-border rounded bg-primary-color-surface !important;
+}
+
+.dx-datagrid-search-panel {
+    margin: 0 !important;
+}
+
+.dx-widget[aria-label='Page Navigation'] .dx-dropdowneditor.dx-dropdowneditor-active .dx-dropdowneditor-icon {
+    background-color: transparent;
+}
+
+/* CREATE FILTER */
+.dx-datagrid-filter-panel-left .dx-icon-filter,
+.dx-datagrid-filter-panel-left .dx-datagrid-filter-panel-text {
+    @apply text-primary-color-main !important;
+}
+
+/* SELECTION ROW */
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td {
+    @apply bg-success-color-border !important;
+}
+
+.selection-grid .dx-datagrid .dx-datagrid-rowsview .dx-row > td {
+    @apply cursor-pointer;
+}
+
+/* IN-CELL EDITOR */
+.dx-datagrid-rowsview .dx-row .dx-texteditor-input {
+    @apply !min-h-fit !text-xs !py-1;
+}
+
+/* DRAG COLUMN */
+.dx-datagrid .dx-datagrid-rowsview .dx-row > td.dx-command-drag {
+    @apply !px-2;
+}
+
+/********************/
+/*TREELIST*/
+/********************/
+.dx-treelist {
+    @apply text-neutral-color-90 !important;
+}
+
+.dx-treelist-headers {
+    @apply mt-2;
+}
+
+.dx-treelist-headers,
+.dx-treelist-scroll-container {
+    border-radius: 8px 8px 0 0;
+}
+
+.dx-treelist-headers .dx-treelist-table .dx-row.dx-header-row > td {
+    @apply bg-primary-color-surface font-normal !px-3 !py-2 text-neutral-color-90 text-[13px];
+    text-align: center !important;
+}
+
+.dx-treelist-headers .dx-treelist-content .dx-treelist-table .dx-row .dx-focused .dx-editor-with-menu {
+    @apply rounded;
+    box-shadow: 0px 0px 0px 2.5px rgba(11, 33, 119, 0.2) !important;
+}
+
+.dx-treelist-headers .dx-treelist-table .dx-texteditor-container {
+    @apply bg-white rounded;
+}
+
+.dx-treelist-headers .dx-treelist-table .dx-texteditor.dx-state-focused {
+    @apply !shadow-none;
+}
+
+.dx-treelist .dx-treelist-rowsview .dx-row > td {
+    @apply !px-3 py-0.5 min-[1300px]:py-1 h-[32px] !align-middle;
+}
+
+.dx-gridbase-container > .dx-treelist-rowsview.dx-scrollable {
+    border-radius: 0 0 8px 8px !important;
+}
+
+.dx-checkbox.dx-treelist-checkbox-size .dx-checkbox-container {
+    @apply py-1 px-4;
+}
+
+/********************/
+/*TEXTBOX*/
+/********************/
+.dx-texteditor-input {
+    @apply !min-h-[30px] !py-1.5 !px-2 !text-sm !font-normal;
+    color: #404040 !important;
+}
+
+.dx-placeholder {
+    @apply pl-2;
+}
+
+.dx-placeholder::before {
+    @apply !p-0;
+}
+
+.dx-texteditor {
+    @apply !rounded;
+    border: 1px solid #c2c2c2 !important;
+}
+
+.dx-texteditor.dx-state-focused {
+    @apply border border-primary-color-border !important;
+    box-shadow: 0px 0px 0px 3px rgba(11, 33, 119, 0.2) !important;
+}
+
+.dx-texteditor.dx-state-disabled {
+    background: #ededed !important;
+    border: 1px solid #c2c2c2 !important;
+}
+/* adding dx-uppercase class to set input textbox to uppercase */
+.dx-uppercase .dx-texteditor-input {
+    @apply uppercase;
+}
+
+/********************/
+/*TEXTAREA*/
+/********************/
+.dx-textarea .dx-placeholder {
+    @apply !pt-1.5;
+}
+
+/********************/
+/*TAG TEXTINPUT*/
+/********************/
+.dx-tag-container.dx-texteditor-input-container {
+    @apply !p-0;
+}
+
+.dx-tag-content {
+    @apply bg-primary-color-surface text-primary-color-main !text-[13px] !mt-[5px] !ml-1 !important;
+}
+
+.dx-tag-remove-button {
+    @apply !w-[7px] !right-[4px];
+}
+
+.dx-tagbox-popup-wrapper .dx-popup-bottom .dx-button[aria-label='OK'] {
+    @apply rounded primary-main-button !important;
+}
+
+.dx-tagbox-popup-wrapper .dx-popup-bottom .dx-button[aria-label='Cancel'] {
+    @apply rounded primary-outlined-button !important;
+}
+
+/********************/
+/*PASSWORD TEXTINPUT*/
+/********************/
+#password-input .dx-texteditor-buttons-container {
+    @apply pr-1;
+}
+
+#password-input .dx-button-mode-text.dx-state-hover,
+#password-input .dx-button-mode-text.dx-state-focused {
+    @apply !bg-transparent;
+}
+
+/********************/
+/*CHECKBOX*/
+/********************/
+.dx-checkbox-checked .dx-checkbox-icon {
+    @apply text-primary-color-main font-bold !important;
+}
+
+.dx-checkbox-checked.dx-state-focused .dx-checkbox-icon {
+    @apply border-primary-color-main border !important;
+}
+
+.dx-checkbox-indeterminate .dx-checkbox-icon {
+    @apply text-primary-color-main !important;
+}
+
+.dx-checkbox-indeterminate .dx-checkbox-icon::before {
+    @apply bg-primary-color-main !important;
+}
+
+/********************/
+/*DATEPICKER*/
+/********************/
+.dx-calendar-navigator .dx-calendar-caption-button.dx-button .dx-button-content,
+.dx-calendar-navigator-next-view.dx-button .dx-icon,
+.dx-calendar-navigator-previous-view.dx-button .dx-icon {
+    @apply text-primary-color-main !important;
+}
+
+.dx-calendar-cell {
+    @apply !p-0;
+}
+
+.dx-calendar-cell.dx-calendar-selected-date.dx-calendar-contoured-date {
+    box-shadow: inset 0 0 0 1px #bebebe, inset 0 0 0 1000px #0b2177 !important;
+    @apply !text-white;
+}
+
+.dx-calendar-cell.dx-calendar-today {
+    @apply text-info-color-main !important;
+}
+
+.dx-datebox-wrapper .dx-popup-bottom .dx-button[aria-label='OK'],
+.dx-datebox-wrapper .dx-popup-bottom .dx-button[aria-label='Cancel'] {
+    @apply rounded primary-soft-button !important;
+}
+
+.dx-datebox-wrapper .dx-popup-bottom .dx-button[aria-label='Today'] {
+    @apply rounded info-soft-button !important;
+}
+
+/********************/
+/*BUTTON*/
+/********************/
+.primary-main-button.dx-button-mode-contained.dx-state-focused,
+.primary-outlined-button.dx-button-mode-contained.dx-state-focused {
+    @apply bg-primary-color-hover border border-primary-color-border;
+}
+
+.primary-main-button.dx-button-mode-contained.dx-state-active {
+    @apply !text-white;
+}
+
+/********************/
+/*FONT FAMILY*/
+/********************/
+.dx-texteditor-input,
+.dx-placeholder,
+.dx-widget input,
+.dx-widget textarea,
+.dx-switch .dx-switch-off,
+.dx-switch .dx-switch-on,
+.dx-overlay-wrapper input {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/********************/
+/*OVERLAY*/
+/********************/
+/* .dx-overlay-shader {
+    background: #0a0a0a85 !important;
+} */
+
+/********************/
+/*CUSTOM MODAL*/
+/********************/
+.custom-popup .dx-overlay-content .dx-popup-content {
+    @apply text-sm !px-3;
+}
+
+.custom-popup .dx-overlay-content .dx-popup-title.dx-toolbar {
+    @apply !px-3 !py-2.5;
+}
+
+.custom-popup .dx-overlay-content .dx-popup-title.dx-toolbar .dx-toolbar-before {
+    @apply w-full;
+}
+
+.custom-popup .dx-overlay-content .dx-popup-title.dx-toolbar .dx-toolbar-label {
+    @apply text-primary-color-main font-medium text-[22px] !important;
+}
+
+.dx-overlay-content .dx-popup-bottom {
+    @apply bg-neutral-color-20 h-[52px] py-2 px-3 !important;
+}
+
+.fit-popup .dx-overlay-content {
+    @apply !h-fit;
+}
+
+.fit-popup .dx-overlay-content .dx-popup-content {
+    @apply text-center !h-fit;
+}
+
+/********************/
+/*RADIO BUTTON*/
+/********************/
+.dx-radiogroup .dx-radiobutton-icon-checked .dx-radiobutton-icon-dot {
+    @apply bg-primary-color-main !important;
+}
+
+.dx-radiogroup .dx-radiobutton .dx-item-content {
+    @apply !text-sm text-neutral-color-90 !important;
+}
+
+.dx-radiobutton.dx-state-hover .dx-radiobutton-icon::before {
+    @apply border-primary-color-main border !important;
+}
+
+/********************/
+/*SWITCH*/
+/********************/
+.dx-switch-container {
+    @apply !rounded-[20px] !h-[18px] !px-0.5 bg-[#E0E0E0] !important;
+}
+
+.dx-switch.dx-state-focused .dx-switch-container,
+.dx-switch.dx-state-hover .dx-switch-container {
+    @apply border-primary-color-main border !important;
+}
+
+.dx-switch-handle::before {
+    @apply bg-white !rounded-[20px] !important;
+}
+
+.dx-switch-on-value .dx-switch-container {
+    @apply bg-primary-color-main !important;
+}
+
+.dx-switch-container .dx-switch-inner {
+    @apply flex items-center;
+}
+
+.dx-switch-container .dx-switch-inner .dx-switch-handle {
+    @apply !min-w-[14px] !h-[14px] !mt-0;
+}
+
+.dx-switch .dx-switch-off,
+.dx-switch .dx-switch-on {
+    @apply invisible;
+}

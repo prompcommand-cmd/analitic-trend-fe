@@ -1,0 +1,15 @@
+.theme-3 .banner-background {
+    background: linear-gradient(90deg, rgba(236, 83, 49, 0.8) 0%, rgba(243, 21, 47, 0.8) 66.15%, rgba(247, 194, 6, 0.8) 100%);
+}
+
+.theme-3 .sidebar-background {
+    background: linear-gradient(180deg, rgba(236, 83, 49, 0.8) 0%, rgba(243, 21, 47, 0.8) 40%, rgba(247, 194, 6, 0.8) 100%);
+}
+
+.theme-3 .sidebar-background-img {
+    background: linear-gradient(180deg, rgba(236, 83, 49, 0.8) 0%, rgba(243, 21, 47, 0.8) 40%, rgba(247, 194, 6, 0.8) 100%), url('@/@/asset/icon/image/background-sidebar-orange.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    position: fixed !important;
+}
